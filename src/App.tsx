@@ -1,6 +1,7 @@
 import React from "react";
 import { SafeAreaView, Text } from "react-native";
 import styled from "styled-components/native";
+import Example from "./Example";
 
 const TextNew = styled.Text ` 
     color: red;
@@ -9,8 +10,8 @@ const TextNew = styled.Text `
 
 const App = () => {
     return <SafeAreaView>
-        <Text>Testando</Text>
-        <TextNew>NOVO TESTE</TextNew>
+        <Example text="Exemplo de props text como propriedade"></Example>
+        <Example>Exemplo de props dentro da tag</Example>
     </SafeAreaView>
 }
 
