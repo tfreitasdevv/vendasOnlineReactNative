@@ -12,6 +12,7 @@ const App = () => {
     return <SafeAreaView>
         <Example text="Exemplo de props text como propriedade"></Example>
         <Example>Exemplo de props dentro da tag</Example>
+        <Example></Example>
     </SafeAreaView>
 }
 
