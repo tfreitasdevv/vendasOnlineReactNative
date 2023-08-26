@@ -4,6 +4,7 @@ import { ContainerLogin } from "../styles/login.styles";
 import Input from "../../../shared/components/input/Input";
 import MyButton from "../../../shared/components/button/MyButton";
 import MyText from "../../../shared/components/text/MyText";
+import { textTypes } from "../../../shared/components/text/textTypes";
 
 const Login = () => {
 
@@ -17,7 +18,7 @@ const Login = () => {
                 <Text>dfsd</Text>
                 <Input ></Input>
                 <MyButton margin="8px" title="Entrar" onPress={handleOnPress}></MyButton>
-                <MyText>MyText</MyText>
+                <MyText type={textTypes.PARAG_BOLD}>MyText</MyText>
             </ContainerLogin>
         </View>
     )
