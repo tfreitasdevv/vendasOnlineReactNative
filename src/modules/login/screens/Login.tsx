@@ -18,7 +18,14 @@ const Login = () => {
             <ContainerLogin>
                 <Text>dfsd</Text>
                 <Input ></Input>
-                <MyButton type={theme.buttons.buttonsTheme.primary} margin="8px" title="Entrar" onPress={handleOnPress}></MyButton>
+                <MyButton 
+                    type={theme.buttons.buttonsTheme.primary} 
+                    margin="8px" 
+                    title="Entrar"
+                    //loading
+                    //disabled
+                    onPress={handleOnPress}>
+                </MyButton>
                 <MyText type={textTypes.PARAG_BOLD}>MyText</MyText>
             </ContainerLogin>
         </View>
