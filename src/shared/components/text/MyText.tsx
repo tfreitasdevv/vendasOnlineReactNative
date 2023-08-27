@@ -16,26 +16,31 @@ const MyText = ({color, type, ...props}: MyTextProps) => {
             case textTypes.TITLE_LIGHT:
             case textTypes.TITLE_REGULAR:
             case textTypes.TITLE_THIN:
+            case textTypes.TITLE_SEMIBOLD:
                 return '24px'
             case textTypes.SUB_TITLE_BOLD:
             case textTypes.SUB_TITLE_LIGHT:
             case textTypes.SUB_TITLE_REGULAR:
             case textTypes.SUB_TITLE_THIN:
+            case textTypes.SUB_TITLE_SEMIBOLD:
                 return '20px'
             case textTypes.BUTTON_BOLD:
             case textTypes.BUTTON_LIGHT:
             case textTypes.BUTTON_REGULAR:
             case textTypes.BUTTON_THIN:
+            case textTypes.BUTTON_SEMIBOLD:
                 return '18px'
             case textTypes.PARAG_SMALL_BOLD:
             case textTypes.PARAG_SMALL_LIGHT:
             case textTypes.PARAG_SMALL_REGULAR:
             case textTypes.PARAG_SMALL_THIN:
+            case textTypes.PARAG_SMALL_SEMIBOLD:
                 return '10px'
             case textTypes.PARAG_BOLD:
             case textTypes.PARAG_LIGHT:
             case textTypes.PARAG_REGULAR:
             case textTypes.PARAG_THIN:
+            case textTypes.PARAG_SEMIBOLD:
             default:
                 return '14px'
         }
@@ -50,6 +55,12 @@ const MyText = ({color, type, ...props}: MyTextProps) => {
             case textTypes.PARAG_BOLD:
             case textTypes.BUTTON_BOLD:
                 return 'Poppins-Bold'
+            case textTypes.TITLE_SEMIBOLD:
+            case textTypes.SUB_TITLE_SEMIBOLD:
+            case textTypes.PARAG_SMALL_SEMIBOLD:
+            case textTypes.PARAG_SEMIBOLD:
+            case textTypes.BUTTON_SEMIBOLD:
+                return 'Poppins-SemiBold'
             case textTypes.TITLE_LIGHT:
             case textTypes.SUB_TITLE_LIGHT:
             case textTypes.PARAG_SMALL_LIGHT:
