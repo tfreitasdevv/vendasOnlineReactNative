@@ -5,6 +5,7 @@ import Input from "../../../shared/components/input/Input";
 import MyButton from "../../../shared/components/button/MyButton";
 import MyText from "../../../shared/components/text/MyText";
 import { textTypes } from "../../../shared/components/text/textTypes";
+import { theme } from "../../../shared/themes/theme";
 
 const Login = () => {
 
@@ -17,7 +18,7 @@ const Login = () => {
             <ContainerLogin>
                 <Text>dfsd</Text>
                 <Input ></Input>
-                <MyButton margin="8px" title="Entrar" onPress={handleOnPress}></MyButton>
+                <MyButton type={theme.buttons.buttonsTheme.primary} margin="8px" title="Entrar" onPress={handleOnPress}></MyButton>
                 <MyText type={textTypes.PARAG_BOLD}>MyText</MyText>
             </ContainerLogin>
         </View>
