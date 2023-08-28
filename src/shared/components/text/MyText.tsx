@@ -6,9 +6,10 @@ import { useMemo } from "react";
 interface MyTextProps extends TextProps {
     color?: string;
     type?: string;
+    margin?: string;
 }
 
-const MyText = ({color, type, ...props}: MyTextProps) => {
+const MyText = ({margin, color, type, ...props}: MyTextProps) => {
 
     const fontSize = useMemo(() => {
         switch (type) {
@@ -85,7 +86,13 @@ const MyText = ({color, type, ...props}: MyTextProps) => {
 
 
     return (
-        <ContainerText fontFamily={fontFamily} size={fontSize} color={color} {...props}></ContainerText>
+        <ContainerText 
+            fontFamily={fontFamily} 
+            margin={margin}
+            size={fontSize} 
+            color={color} 
+            {...props}>
+        </ContainerText>
     )
 }
 
